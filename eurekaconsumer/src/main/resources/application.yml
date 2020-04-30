@@ -1,0 +1,17 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: springcloudconsumer
+eureka:
+  client:
+#    ##�Ƿ��Լ�ע�ᵽeureka �����һ�㲻���Լ�ע�ᵽeureka
+#    register-with-eureka: false
+#    ##�Ƿ��eureka��ȡע����Ϣ �����һ��Ϊfalse
+#    fetch-registry: false
+#    ##������eureka server�����ĵ�ַ ��ѯ�����ע�������Ҫ�������
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+#feign:
+#  hystrix:
+#    enabled: true

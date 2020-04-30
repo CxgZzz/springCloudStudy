@@ -1,0 +1,15 @@
+
+server:
+  port: 9000
+spring:
+  application:
+    name: springcloudproducer
+eureka:
+  client:
+    #    ##是否将自己注册到eureka 服务端一般不将自己注册到eureka
+    #    register-with-eureka: false
+    #    ##是否从eureka获取注册信息 服务端一般为false
+    #    fetch-registry: false
+    ##设置与eureka server交互的地址 查询服务和注册服务都需要依赖这个
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
